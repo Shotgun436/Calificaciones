@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtUaprend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/unidaddeaprendizaje"
+        android:autofillHints="UdeAprend"/>
+
+    <EditText
+        android:id="@+id/txtPrimerParc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="1er. Parcial"
+        android:inputType="numberDecimal"
+        android:numeric="decimal" />
+
+    <EditText
+        android:id="@+id/txtSegundoParc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="2o..parcial"
+        android:ems="10"
+        android:hint="2o. Parcial"
+        android:inputType="numberDecimal"
+        android:numeric="decimal" />
+
+    <EditText
+        android:id="@+id/txtTercerParc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="3er.parcial"
+        android:ems="10"
+        android:hint="3er  Parcial"
+        android:inputType="numberDecimal"
+        android:numeric="decimal" />
+
+    <Button
+        android:id="@+id/butnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:text="@string/agregarregistro"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ScrollView
+        android:layout_width="889dp"
+        android:layout_height="468dp"
+        android:layout_weight="10">
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:addStatesFromChildren="false"
+            android:alwaysDrawnWithCache="true"
+            android:background="#03EDD7"
+            android:scrollbars="horizontal|vertical"
+            android:showDividers="middle|beginning|end" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="promedia"
+        android:text="Calcula Promedios" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="restablece"
+        android:text="Restablecer" />
+</LinearLayout>
